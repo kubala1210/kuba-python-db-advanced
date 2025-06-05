@@ -4,7 +4,27 @@
 
 # `#02` Python i Bazy danych: Zaawansowane
 
-Tutaj treść
+Zdefiniuj dwa modele:
+
+- `Author`:
+  - `id` – klucz główny (`Integer`),
+  - `name` – imię i nazwisko (`String`, wymagane).
+
+- `Book`:
+  - `id` – klucz główny (`Integer`),
+  - `title` – tytuł książki (`String`, wymagany),
+  - `author_id` – klucz obcy do tabeli `Author`.
+
+Ustal relację: jeden autor może mieć wiele książek.
+
+Twoje zadanie:
+1. Dodaj dwóch autorów i kilka książek przypisanych do każdego.
+2. Pobierz i wypisz wszystkie książki konkretnego autora (np. „Jan Nowak”).
+3. Pobierz listę autorów, którzy mają więcej niż jedną książkę.
+
+**Wymagania techniczne:**
+- Skorzystaj z relacji `relationship()` i `ForeignKey`.
+- Użyj SQLAlchemy ORM i sesji do wykonania operacji.
 
 
 &nbsp;

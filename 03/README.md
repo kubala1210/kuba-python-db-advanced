@@ -4,8 +4,27 @@
 
 # `#03` Python i Bazy danych: Zaawansowane
 
+Zdefiniuj dwa modele połączone relacją wiele-do-wielu:
 
-Tutaj treść
+- `Person`:
+  - `id` – klucz główny (`Integer`),
+  - `name` – imię osoby (`String`, wymagane).
+
+- `Skill`:
+  - `id` – klucz główny (`Integer`),
+  - `name` – nazwa umiejętności (`String`, wymagane).
+
+Utwórz tabelę pośredniczącą `person_skill`, która będzie przechowywać powiązania między osobami a umiejętnościami.
+
+Twoje zadanie:
+1. Dodaj kilka osób i kilka umiejętności.
+2. Przypisz osobom wybrane umiejętności.
+3. Dla jednej osoby wypisz listę jej umiejętności.
+4. Dla jednej umiejętności wypisz listę osób, które ją posiadają.
+
+**Wymagania techniczne:**
+- Zastosuj `relationship()` z parametrem `secondary`.
+- Wykorzystaj SQLAlchemy ORM do wykonania operacji.
 
 
 &nbsp;

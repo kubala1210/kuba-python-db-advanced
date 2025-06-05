@@ -4,8 +4,23 @@
 
 # `#04` Python i Bazy danych: Zaawansowane
 
-Tutaj treść
+Zdefiniuj model `Measurement`, który przechowuje dane pomiarowe.
 
+Model powinien zawierać:
+- `id` – klucz główny (`Integer`),
+- `device_name` – nazwa urządzenia (`String`, wymagane),
+- `value` – wartość pomiaru (`Float`, wymagane),
+- `timestamp` – data i czas pomiaru (`DateTime`, wymagane).
+
+Twoje zadanie:
+1. Dodaj przykładowe dane dla kilku urządzeń (każde z wieloma pomiarami).
+2. Oblicz i wypisz:
+   - liczbę pomiarów dla każdego urządzenia,
+   - średnią wartość pomiaru dla każdego urządzenia.
+
+**Wymagania techniczne:**
+- Skorzystaj z `func.count()` i `func.avg()` oraz `group_by()`.
+- Użyj SQLAlchemy ORM i sesji do zapytań.
 
 &nbsp;
 

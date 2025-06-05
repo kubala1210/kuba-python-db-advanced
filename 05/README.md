@@ -4,7 +4,21 @@
 
 # `#05` Python i Bazy danych: Zaawansowane
 
-Tutaj treść
+Zdefiniuj model `Item`, który reprezentuje element listy rzeczy.
+
+Model powinien zawierać:
+- `id` – klucz główny (`Integer`),
+- `name` – nazwa przedmiotu (`String`, wymagane),
+- `priority` – liczba całkowita oznaczająca priorytet (`Integer`), im mniejsza, tym wyższy priorytet.
+
+Twoje zadanie:
+1. Dodaj co najmniej 20 przykładowych elementów o różnych nazwach i priorytetach.
+2. Posortuj elementy rosnąco po priorytecie.
+3. Zaimplementuj paginację: wypisz tylko elementy od 11 do 15 miejsca (strona 3 przy 5 elementach na stronę).
+
+**Wymagania techniczne:**
+- Skorzystaj z metod `.order_by()`, `.limit()`, `.offset()`.
+- Wykonaj zapytania przy użyciu SQLAlchemy ORM.
 
 
 &nbsp;

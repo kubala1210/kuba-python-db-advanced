@@ -4,8 +4,27 @@
 
 # `#01` Python i Bazy danych: Zaawansowane
 
+Zdefiniuj model `Note`, który reprezentuje notatkę zapisaną przez użytkownika.
 
-Tutaj treść
+Model powinien zawierać:
+
+* `id` – klucz główny (`Integer`, automatycznie numerowany),
+* `title` – tytuł notatki (`String`, wymagany),
+* `body` – treść notatki (`Text`, wymagane),
+* `pinned` – flaga logiczna (`Boolean`), domyślnie `False`.
+
+Twoje zadanie:
+
+1. Utwórz i zapisz do bazy dwie notatki.
+2. Wyszukaj notatkę po tytule i wypisz jej treść.
+3. Zmień status `pinned` jednej z notatek na `True` i zapisz zmiany.
+4. Usuń drugą notatkę z bazy.
+
+**Wymagania techniczne:**
+
+* Użyj SQLAlchemy ORM.
+* Zastosuj sesję (`Session`) oraz metody `.add()`, `.query()`, `.commit()`, `.delete()`.
+* Nie musisz używać formularza do przesłania danych
 
 
 &nbsp;
